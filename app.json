@@ -1,0 +1,47 @@
+{
+  "name": "studious-lamp",
+  "scripts": {
+  },
+  "env": {
+    "automationId": {
+      "required": true
+    },
+    "autorun_Environment_PROD_UAT_DEV": {
+      "required": true
+    },
+    "DATABASE_SEGMENTATION_DEV": {
+      "required": true
+    },
+    "DATABASE_URL_DEV": {
+      "required": true
+    },
+    "DATABASE_URL_POC1": {
+      "required": true
+    },
+    "DATABASE_URL_UAT": {
+      "required": true
+    },
+    "ftp_pwd_enterprise": {
+      "required": true
+    },
+    "ftp_uid_enterprise": {
+      "required": true
+    },
+    "run_auto": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "scheduler"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
